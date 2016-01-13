@@ -8,6 +8,6 @@
         //for (int i = 0; i < array.length; i++) {
             //total += array[i];
         //}
-        //System.out.println("total = " + total);
+        System.out.println("total = " + total);
     //}
 //}
