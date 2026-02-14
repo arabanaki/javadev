@@ -26,7 +26,6 @@ public class App1 {
 
         numberLabel = new JLabel("1", SwingConstants.CENTER);
         numberLabel.setFont(new Font("SansSerif", Font.BOLD, 60));
-
         runButton = new JButton("Run");
         stopButton = new JButton("Stop");
         stopButton.setEnabled(false);
