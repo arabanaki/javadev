@@ -18,7 +18,7 @@ public class App1 {
     public App1() {
         JFrame frame = new JFrame("Counter 1-10");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(320, 220);
+        frame.setSize(800, 500);
         frame.setLocationRelativeTo(null);
         frame.setLayout(new BorderLayout(10, 10));
 
