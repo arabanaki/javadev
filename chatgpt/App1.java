@@ -14,6 +14,8 @@ public class App1 {
     private int count = 1;
     private final JLabel numberLabel;
     private final Timer timer;
+    private final JButton runButton;
+    private final JButton stopButton;
 
     public App1() {
         JFrame frame = new JFrame("Counter 1-10");
@@ -24,14 +26,14 @@ public class App1 {
 
         numberLabel = new JLabel("1", SwingConstants.CENTER);
         numberLabel.setFont(new Font("SansSerif", Font.BOLD, 60));
-
-        JButton runButton = new JButton("Run");
-        JButton stopButton = new JButton("Stop");
+        runButton = new JButton("Run");
+        stopButton = new JButton("Stop");
+        stopButton.setEnabled(false);
 
         timer = new Timer(500, e -> updateCount());
 
         runButton.addActionListener(e -> startCounting());
-        stopButton.addActionListener(e -> timer.stop());
+        stopButton.addActionListener(e -> stopCounting());
 
         JPanel buttonPanel = new JPanel(new FlowLayout(FlowLayout.CENTER, 10, 10));
         buttonPanel.add(runButton);
@@ -46,6 +48,14 @@ public class App1 {
         count = 1;
         numberLabel.setText(String.valueOf(count));
         timer.start();
+        runButton.setEnabled(false);
+        stopButton.setEnabled(true);
+    }
+
+    private void stopCounting() {
+        timer.stop();
+        runButton.setEnabled(true);
+        stopButton.setEnabled(false);
     }
 
     private void updateCount() {
