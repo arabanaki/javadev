@@ -15,7 +15,6 @@ import javax.swing.Timer;
 public class App1 {
     private static final String CLICK_TEXT = "\u0E04\u0E25\u0E34\u0E4A\u0E01";
     private static final String HELLO_WORLD_TH = "\u0E2A\u0E27\u0E31\u0E2A\u0E14\u0E35\u0E0A\u0E32\u0E27\u0E42\u0E25\u0E01";
-
     private int count = 1;
     private final JLabel numberLabel;
     private final Timer timer;
@@ -34,6 +33,7 @@ public class App1 {
 
         runButton = new JButton("Run");
         stopButton = new JButton("Stop");
+
         JButton clickButton = new JButton(CLICK_TEXT);
         clickButton.setFont(getThaiCapableFont(Font.PLAIN, 14));
         stopButton.setEnabled(false);
@@ -42,7 +42,9 @@ public class App1 {
 
         runButton.addActionListener(e -> startCounting());
         stopButton.addActionListener(e -> stopCounting());
+
         clickButton.addActionListener(e -> JOptionPane.showMessageDialog(frame, HELLO_WORLD_TH, "Info", JOptionPane.INFORMATION_MESSAGE));
+
 
         JPanel buttonPanel = new JPanel(new FlowLayout(FlowLayout.CENTER, 10, 10));
         buttonPanel.add(runButton);
@@ -53,6 +55,7 @@ public class App1 {
         frame.add(buttonPanel, BorderLayout.SOUTH);
         frame.setVisible(true);
     }
+
 
     private Font getThaiCapableFont(int style, int size) {
         String[] preferredFonts = {"Noto Sans Thai", "Tahoma", "Leelawadee UI", "TH Sarabun New", Font.DIALOG};
@@ -68,6 +71,7 @@ public class App1 {
 
         return new Font(Font.DIALOG, style, size);
     }
+
 
     private void startCounting() {
         count = 1;
