@@ -5,6 +5,7 @@ import java.awt.Font;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 import javax.swing.SwingUtilities;
@@ -26,18 +27,22 @@ public class App1 {
 
         numberLabel = new JLabel("1", SwingConstants.CENTER);
         numberLabel.setFont(new Font("SansSerif", Font.BOLD, 60));
+
         runButton = new JButton("Run");
         stopButton = new JButton("Stop");
+        JButton clickButton = new JButton("คลิ๊ก");
         stopButton.setEnabled(false);
 
         timer = new Timer(500, e -> updateCount());
 
         runButton.addActionListener(e -> startCounting());
         stopButton.addActionListener(e -> stopCounting());
+        clickButton.addActionListener(e -> JOptionPane.showMessageDialog(frame, "สวัสดีชาวโลก", "Info", JOptionPane.INFORMATION_MESSAGE));
 
         JPanel buttonPanel = new JPanel(new FlowLayout(FlowLayout.CENTER, 10, 10));
         buttonPanel.add(runButton);
         buttonPanel.add(stopButton);
+        buttonPanel.add(clickButton);
 
         frame.add(numberLabel, BorderLayout.CENTER);
         frame.add(buttonPanel, BorderLayout.SOUTH);
