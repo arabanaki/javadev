@@ -3,9 +3,23 @@
   "configurations": [
     {
       "type": "java",
-      "name": "Run App1 (UTF-8)",
+      "name": "App1",
       "request": "launch",
       "mainClass": "com.biz.app.app1.App1",
+      "projectName": "javadev_5b13d10f"
+    },
+    {
+      "type": "java",
+      "name": "App1",
+      "request": "launch",
+      "mainClass": "chatgpt.com.biz.app.app1.App1",
+      "projectName": "javadev_5b13d10f"
+    },
+    {
+      "type": "java",
+      "name": "Run App1 (UTF-8)",
+      "request": "launch",
+      "mainClass": "chatgpt.com.biz.app.app1.App1",
       "classPaths": [
         "${workspaceFolder}/chatgpt"
       ],
