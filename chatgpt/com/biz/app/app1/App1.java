@@ -1,5 +1,6 @@
 package com.biz.app.app1;
 
+
 public final class App1 {
     private App1() {
         // prevent instantiation
