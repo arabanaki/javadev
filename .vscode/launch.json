@@ -1,0 +1,16 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Run App1 (UTF-8)",
+      "request": "launch",
+      "mainClass": "com.biz.app.app1.App1",
+      "classPaths": [
+        "${workspaceFolder}/chatgpt"
+      ],
+      "console": "integratedTerminal",
+      "vmArgs": "-Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8"
+    }
+  ]
+}
