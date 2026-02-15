@@ -1,7 +1,9 @@
 package com.biz.app.app1;
 
 public final class GreetingService {
+    private static final String THAI_GREETING = "\u0E2A\u0E27\u0E31\u0E2A\u0E14\u0E35\u0E0A\u0E32\u0E27\u0E42\u0E25\u0E01";
+
     public String createGreeting() {
-        return "hello world";
+        return THAI_GREETING;
     }
 }
