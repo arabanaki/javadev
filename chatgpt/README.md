@@ -26,3 +26,11 @@ mvn exec:java
 2. ติดตั้ง Extension Pack for Java
 3. ถ้า path JDK ใน `.vscode/settings.json` ไม่ตรงเครื่องคุณ ให้แก้ `java.configuration.runtimes[].path`
 4. กด Run ที่ configuration ชื่อ **Run Main (app3)**
+
+## แสดง path ใน folder `chatgpt/`
+
+ใช้คำสั่งนี้เพื่อแสดง path ของไฟล์ทั้งหมดในโฟลเดอร์ `chatgpt/`:
+
+```bash
+find chatgpt -type f | sort
+```

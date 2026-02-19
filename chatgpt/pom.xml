@@ -4,9 +4,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.biz.app</groupId>
-    <artifactId>app4</artifactId>
+    <artifactId>app3</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>app4-console</name>
+    <name>app3-console</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -28,7 +28,7 @@
                 <artifactId>exec-maven-plugin</artifactId>
                 <version>3.3.0</version>
                 <configuration>
-                    <mainClass>com.biz.app.app4.Main</mainClass>
+                    <mainClass>com.biz.app.app3.Main</mainClass>
                 </configuration>
             </plugin>
         </plugins>
