@@ -1,0 +1,12 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Run Main (app3)",
+      "request": "launch",
+      "mainClass": "com.biz.app.app3.Main",
+      "projectName": "app3"
+    }
+  ]
+}
